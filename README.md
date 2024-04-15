@@ -1,4 +1,5 @@
 Tax Calculator
+
 This is a simple tax calculator web application designed to help users calculate their overall income after tax deductions based on their gross annual income, extra income, age group, and applicable deductions.
 
 Features
