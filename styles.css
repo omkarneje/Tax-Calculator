@@ -1,0 +1,118 @@
+.containerr {
+  width: 30%;
+  margin: 50px auto; /* Centers the box horizontally */
+  border: 2px solid lightblue; /* Light blue outline for the box */
+  padding: 30px; /* Adds padding inside the box */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px 4px;
+}
+
+.bi-question-circle{
+  opacity: .5;
+}
+
+.hover-1:hover{
+  color:blue;
+}
+
+
+
+.error-tooltip {
+  color: red;
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 40%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  display: flex;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60% !important;
+  height:50% !important;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#age-error:hover::after {
+  content: "Error: Age is required"; /* Tooltip text */
+  position: absolute;
+  background-color: rgb(79, 73, 73);
+  color: white;
+  padding: 3px;
+  border-radius: 7px;
+  font-size: 14px;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+}
+
+#age-error{
+  position: relative;
+}
+
+#age-error::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for submit button */
+.submit-button {
+  background-color: blue; /* Blue color for submit button */
+  color: white; /* White text color for submit button */
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Optional: Style for submit button on hover */
+.submit-button:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}
+
+#close-but{
+  justify-content: center;
+  margin-bottom: 10%;
+}
